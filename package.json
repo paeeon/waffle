@@ -1,0 +1,19 @@
+{
+  "name": "waffle",
+  "version": "0.0.0",
+  "description": "A virtual persona community",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "chalk": "^1.1.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.8",
+    "morgan": "^1.6.1",
+    "swig": "^1.4.2"
+  }
+}
