@@ -1,0 +1,41 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  font-family: "Helvetica", sans-serif;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin-top: 50px;
+  background-color: #7BC3AB; }
+
+div.auth-buttons {
+  margin-bottom: 15px; }
+
+div.primary-nav {
+  margin: 0;
+  border-radius: 5px;
+  background-color: #214159;
+  padding: 10px 10px;
+  border: 1px solid #214159; }
+
+.nav-pills li.active a {
+  background-color: #132634; }
+
+button.btn-primary {
+  color: #214159;
+  background-color: #F8F5C2;
+  border-color: #f3ee94; }
+  button.btn-primary:hover {
+    color: #214159;
+    background-color: #f3ee94;
+    border-color: #eee667; }
+
+button.btn-default {
+  color: #214159;
+  background-color: white;
+  border: none; }
+  button.btn-default:hover {
+    color: #214159;
+    background-color: #e6e6e6; }

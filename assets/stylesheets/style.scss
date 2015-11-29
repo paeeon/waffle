@@ -1,0 +1,61 @@
+$font-stack: 'Helvetica', sans-serif;
+$light-gray: #eee;
+$rose-pink: #C95C55;
+$mint-green: #C0E6B7;
+$pale-yellow: #F8F5C2;
+$mustard-yellow: #E1D05C;
+$aqua-green: #7BC3AB;
+$dark-blue: #214159;
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  font-family: $font-stack;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin-top: 50px;
+  background-color: $aqua-green;
+}
+
+div.auth-buttons {
+  margin-bottom: 15px;
+}
+
+div.primary-nav {
+  margin: 0;
+  border-radius: 5px;
+  background-color: $dark-blue;
+  padding: 10px 10px;
+  border: 1px solid $dark-blue;
+}
+
+.nav-pills {
+  li.active a {
+    background-color: darken($dark-blue, 10%);
+  }
+}
+
+button.btn-primary{
+  color: $dark-blue;
+  background-color: $pale-yellow;
+  border-color: darken($pale-yellow, 10%);
+  &:hover {
+    color: $dark-blue;
+    background-color: darken($pale-yellow, 10%);
+    border-color: darken($pale-yellow, 20%);
+  }
+}
+
+button.btn-default{
+  color: $dark-blue;
+  background-color: white;
+  border: none;
+  &:hover {
+    color: $dark-blue;
+    background-color: darken(white, 10%);
+  }
+}

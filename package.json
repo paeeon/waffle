@@ -4,16 +4,23 @@
   "description": "A virtual persona community",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets",
+    "start": "npm run build-css & nodemon -e html,css,js app.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Lily Jen",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^3.0.5",
     "chalk": "^1.1.1",
     "express": "^4.13.3",
     "mongoose": "^4.2.8",
     "morgan": "^1.6.1",
+    "path": "^0.12.7",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.14.1",
+    "node-sass": "^3.4.2"
   }
 }
